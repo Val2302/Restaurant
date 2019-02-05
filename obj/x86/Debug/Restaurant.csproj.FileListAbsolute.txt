@@ -1,0 +1,16 @@
+D:\Restaurant\bin\Debug\Restaurant.exe
+D:\Restaurant\bin\Debug\Restaurant.pdb
+D:\Restaurant\obj\x86\Debug\Restaurant.FormMain.resources
+D:\Restaurant\obj\x86\Debug\Restaurant.Properties.Resources.resources
+D:\Restaurant\obj\x86\Debug\Restaurant.csproj.GenerateResource.Cache
+D:\Restaurant\obj\x86\Debug\Restaurant.exe
+D:\Restaurant\obj\x86\Debug\Restaurant.pdb
+D:\Restaurant\bin\Debug\Restaurant.mdf
+D:\Restaurant\bin\Debug\Restaurant_log.ldf
+D:\Restaurant\bin\Debug\Restaurant.exe.config
+D:\Restaurant\obj\x86\Debug\Restaurant.FormSupply.resources
+D:\Restaurant\obj\x86\Debug\Restaurant.FormAbout.resources
+D:\Restaurant\obj\x86\Debug\Restaurant.FormDishes.resources
+D:\Restaurant\obj\x86\Debug\Restaurant.FormOrders.resources
+D:\Restaurant\obj\x86\Debug\Restaurant.csprojAssemblyReference.cache
+D:\Restaurant\obj\x86\Debug\Restaurant.csproj.CoreCompileInputs.cache

@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D50DD26F-3566-4DAB-B533-7E8BEBB20271}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Restaurant</RootNamespace>
+    <AssemblyName>Restaurant</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDishes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDishes.Designer.cs">
+      <DependentUpon>FormDishes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrders.Designer.cs">
+      <DependentUpon>FormOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSupply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSupply.Designer.cs">
+      <DependentUpon>FormSupply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RestaurantDataSetBoards.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetBoards.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetBoardsCategories.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetBoardsCategories.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetd.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetDishes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetDishes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetDishesVarieties.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetDishesVarieties.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetIngredients.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetIngredients.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetJOrders.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetJOrders.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetJSuppliers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetJSuppliers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetOrder.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetOrder.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetOrderDishes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetOrderDishes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetPositions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetPositions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetpp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetpp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetProducts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetProducts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetProductVarieties.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetProductVarieties.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetsc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetsc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetSpp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetSpp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetStaff.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetStaff.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetStore.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetStore.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetSupplierCategories.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetSupplierCategories.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetSuppliers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetSuppliers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSetSupplyProducts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSetSupplyProducts.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDishes.resx">
+      <DependentUpon>FormDishes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrders.resx">
+      <DependentUpon>FormOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSupply.resx">
+      <DependentUpon>FormSupply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RestaurantDataSetBoards.xsc">
+      <DependentUpon>RestaurantDataSetBoards.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetBoards.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetBoards.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetBoards.xss">
+      <DependentUpon>RestaurantDataSetBoards.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetBoardsCategories.xsc">
+      <DependentUpon>RestaurantDataSetBoardsCategories.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetBoardsCategories.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetBoardsCategories.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetBoardsCategories.xss">
+      <DependentUpon>RestaurantDataSetBoardsCategories.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetd.xsc">
+      <DependentUpon>RestaurantDataSetd.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetd.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetd.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetd.xss">
+      <DependentUpon>RestaurantDataSetd.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetDishes.xsc">
+      <DependentUpon>RestaurantDataSetDishes.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetDishes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetDishes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetDishes.xss">
+      <DependentUpon>RestaurantDataSetDishes.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetDishesVarieties.xsc">
+      <DependentUpon>RestaurantDataSetDishesVarieties.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetDishesVarieties.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetDishesVarieties.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetDishesVarieties.xss">
+      <DependentUpon>RestaurantDataSetDishesVarieties.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetIngredients.xsc">
+      <DependentUpon>RestaurantDataSetIngredients.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetIngredients.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetIngredients.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetIngredients.xss">
+      <DependentUpon>RestaurantDataSetIngredients.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetJOrders.xsc">
+      <DependentUpon>RestaurantDataSetJOrders.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetJOrders.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetJOrders.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetJOrders.xss">
+      <DependentUpon>RestaurantDataSetJOrders.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetJSuppliers.xsc">
+      <DependentUpon>RestaurantDataSetJSuppliers.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetJSuppliers.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetJSuppliers.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetJSuppliers.xss">
+      <DependentUpon>RestaurantDataSetJSuppliers.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetOrder.xsc">
+      <DependentUpon>RestaurantDataSetOrder.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetOrder.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetOrder.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetOrder.xss">
+      <DependentUpon>RestaurantDataSetOrder.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetOrderDishes.xsc">
+      <DependentUpon>RestaurantDataSetOrderDishes.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetOrderDishes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetOrderDishes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetOrderDishes.xss">
+      <DependentUpon>RestaurantDataSetOrderDishes.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetp.xsc">
+      <DependentUpon>RestaurantDataSetp.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetp.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetp.xss">
+      <DependentUpon>RestaurantDataSetp.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetPositions.xsc">
+      <DependentUpon>RestaurantDataSetPositions.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetPositions.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetPositions.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetPositions.xss">
+      <DependentUpon>RestaurantDataSetPositions.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetpp.xsc">
+      <DependentUpon>RestaurantDataSetpp.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetpp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetpp.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetpp.xss">
+      <DependentUpon>RestaurantDataSetpp.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetProducts.xsc">
+      <DependentUpon>RestaurantDataSetProducts.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetProducts.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetProducts.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetProducts.xss">
+      <DependentUpon>RestaurantDataSetProducts.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetProductVarieties.xsc">
+      <DependentUpon>RestaurantDataSetProductVarieties.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetProductVarieties.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetProductVarieties.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetProductVarieties.xss">
+      <DependentUpon>RestaurantDataSetProductVarieties.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetsc.xsc">
+      <DependentUpon>RestaurantDataSetsc.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetsc.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetsc.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetsc.xss">
+      <DependentUpon>RestaurantDataSetsc.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetSpp.xsc">
+      <DependentUpon>RestaurantDataSetSpp.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetSpp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetSpp.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetSpp.xss">
+      <DependentUpon>RestaurantDataSetSpp.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetStaff.xsc">
+      <DependentUpon>RestaurantDataSetStaff.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetStaff.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetStaff.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetStaff.xss">
+      <DependentUpon>RestaurantDataSetStaff.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetStore.xsc">
+      <DependentUpon>RestaurantDataSetStore.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetStore.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetStore.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetStore.xss">
+      <DependentUpon>RestaurantDataSetStore.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetSupplierCategories.xsc">
+      <DependentUpon>RestaurantDataSetSupplierCategories.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetSupplierCategories.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetSupplierCategories.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetSupplierCategories.xss">
+      <DependentUpon>RestaurantDataSetSupplierCategories.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetSuppliers.xsc">
+      <DependentUpon>RestaurantDataSetSuppliers.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetSuppliers.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetSuppliers.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetSuppliers.xss">
+      <DependentUpon>RestaurantDataSetSuppliers.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetSupplyProducts.xsc">
+      <DependentUpon>RestaurantDataSetSupplyProducts.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSetSupplyProducts.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSetSupplyProducts.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSetSupplyProducts.xss">
+      <DependentUpon>RestaurantDataSetSupplyProducts.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Restaurant.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Restaurant_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Restaurant.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль Microsoft .NET Framework 4 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Установщик Windows 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
